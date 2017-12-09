@@ -1,6 +1,7 @@
 'use strict';
 const express = require('express');
 const app = express();
+const port = process.env.PORT || 8000;
 
 app.use(express.static('public'));
 
@@ -14,6 +15,6 @@ app.use('/', function(req, res){
   res.send('404 not found');
 });
 
-app.listen(8000, function(){
+app.listen(port, function(){
   console.log('Listening on port 8000');
 });
