@@ -5,8 +5,12 @@ const port = process.env.PORT || 8000;
 
 app.use(express.static('public'));
 
-app.get('/api', function(req, res){
-  res.send('hello from api');
+app.get('/english', function(req, res){
+  res.send('hello world');
+});
+
+app.get('/japanese', function(req, res){
+  res.send('こんにちは世界');
 });
 
 app.use('/', function(req, res){
