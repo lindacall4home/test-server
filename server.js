@@ -10,7 +10,7 @@ app.get('/english', function(req, res){
 });
 
 app.get('/japanese', function(req, res){
-  res.send('こんにちは世界こんにちは世');
+  res.send('こんにちは世界こんにちは');
 });
 
 app.use('/', function(req, res){
