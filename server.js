@@ -6,12 +6,12 @@ const port = process.env.PORT || 8000;
 app.use(express.static('public'));
 
 app.get('/english', function(req, res){
-  res.header("Content-Type", "application/json; charset=utf-16");
+  res.header("Content-Type", "text/plain; charset=utf-16");
   res.send('hello world');
 });
 
 app.get('/japanese', function(req, res){
-  res.header("Content-Type", "application/json; charset=utf-16");
+  res.header("Content-Type", "text/plain; charset=utf-16");
   res.send('こんにちは世');
 });
 
